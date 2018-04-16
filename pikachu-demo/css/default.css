@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+*::after{
+  box-sizing: border-box
+}
+*::before{
+  box-sizing: border-box
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.code-wrapper {
+  border: 1px solid red;
+  height: 50%;
+  flex: 1;
+}
+.pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#code {
+  overflow: hidden;
+  margin-left: 5px;
+  height: 100%;
+}
+.actions {
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+.actions button {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  height: 30px;
+  width: 40px;
+  border-radius: 4px;
+  background-color: #eee;
+  border: none;
+}
+.actions button:focus{
+  outline: none;
+}
+.active {
+  box-shadow: 0 0 5px rgba(0,0,0,0.8)
+}
